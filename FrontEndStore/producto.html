@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script>
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://covid-19-data.p.rapidapi.com/totals",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "dbb0f605cdmsh02162ebcd28b93bp14e1a8jsn80de0ffc383c",
+                "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
+            }
+        };
+
+        $.ajax(settings).done(function(response) {
+            console.log(response);
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>ReactJS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="IMG Producto">
+
+            <div class="camisa__contenido">
+                <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                    of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Seleccionar talla -- </option>
+                        <option value="Peq">Pequeña</option>
+                        <option value="Med">Mediana</option>
+                        <option value="Gra">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__texto"> Front End Store - Todos los derechos Reservados 2022</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script>
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://covid-19-data.p.rapidapi.com/totals",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "dbb0f605cdmsh02162ebcd28b93bp14e1a8jsn80de0ffc383c",
+                "x-rapidapi-host": "covid-19-data.p.rapidapi.com"
+            }
+        };
+
+        $.ajax(settings).done(function(response) {
+            console.log(response);
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+
+        <div class="grid">
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/1.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">VueJS</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/2.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">AngujarJS</p>
+                        <p class="producto__precio">$350</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/3.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">ReactJS</p>
+                        <p class="producto__precio">$300</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/4.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Redux</p>
+                        <p class="producto__precio">$200</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/5.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">NodeJS</p>
+                        <p class="producto__precio">$400</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/6.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">SASS</p>
+                        <p class="producto__precio">$500</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html?id=7">
+                    <img class="producto__imagen" src="img/7.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">HTML5</p>
+                        <p class="producto__precio">$300</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/8.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">GitHub</p>
+                        <p class="producto__precio">$600</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/9.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">BulmaCSS</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/10.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">TypeScript</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/11.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Drupal</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/1.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">JavaScript</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/13.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">GraphQL</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/14.jpg" alt="IMG Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">WordPress</p>
+                        <p class="producto__precio">$250</p>
+                    </div>
+                </a>
+            </div>
+            <!--Producto-->
+
+            <div class="grafico grafico--camisas">
+
+            </div>
+            <div class="grafico grafico--node">
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__texto"> Front End Store - Todos los derechos Reservados 2022</p>
+    </footer>
+</body>
+
+</html>
